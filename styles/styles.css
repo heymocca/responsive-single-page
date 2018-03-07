@@ -1,0 +1,248 @@
+/*===========================================
+            Default Values:
+
+            font-family:      'Roboto Condensed', sans-serif;
+            Medium Turquoise: #34C6D3; (Buttons, Icons, Links, Lines & Background)
+            Steel Grey:       #41464B; (Headings)
+            Blue Bayoux:      #64707B; (Paragraphs)
+            White:            #fff;    (Background)
+            Black:            #000;
+
+=============================================*/
+
+/* General Style */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    color: #64707B;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #41464b;
+    text-transform: uppercase;
+}
+
+/*===========================================
+            Buttons(General)
+=============================================*/
+.btn-general {
+    padding: 12px 26px;
+    border-width: 2px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover, .btn-white:focus {
+    background: #fff;
+    color: #41464B;
+}
+
+.btn-blue {
+    border-color: #34C6D3;
+    color: #34C6D3;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+    background: #34C6D3;
+    color: #fff;
+}
+
+/*===========================================
+            Parallax(General)
+=============================================*/
+.bg-parallax {
+    background-size:cover;
+    backgound-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*===========================================
+            Content-box(General)
+=============================================*/
+.content-box {
+    padding: 60px 0px;
+}
+
+.content-title h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background: #34C6D3;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+
+/*===========================================
+            Home
+=============================================*/
+
+.home {
+    height: 100%;
+}
+
+.home-cover {
+    background-image: url("../images/bg-home.jpg");
+    height: 100%;
+}
+
+.home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.home-heading h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/*===========================================
+            Home Animate
+=============================================*/
+.animateDurationGeneral {
+    animation-duration: .5s;
+}
+
+.home-cover {
+    animation-delay: .3s;
+}
+
+.home-heading {
+    animation-delay: .5s;
+}
+
+.home-btn {
+    animation-delay: 1s;
+}
+
+/*===========================================
+            Services
+=============================================*/
+
+.service-item {
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #34C6D3;
+    float: left;
+    margin-right: 25px;
+    padding: 15px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background: #34C6D3;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item-description p {
+    margin: 0px;
+}
+
+/*===========================================
+            About
+=============================================*/
+
+.about-content-box{
+    float: left;
+    height: 700px;
+}
+
+.about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about .content-title h3 {
+    text-align: left;
+}
+
+.about .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+.about-description p {
+    margin-bottom: 30px;
+}
+
+.about-diagonal-parallax {
+    float: right;
+    width: 60%;
+    height: 700px;
+    background-image: url(../images/bg-about.jpg);
+    border-left: 200px solid #fff;
+    border-top: 700px solid transparent;
+}
+
+/*===========================================
+            Work
+=============================================*/
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform .5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+}
