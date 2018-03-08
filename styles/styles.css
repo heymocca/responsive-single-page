@@ -13,7 +13,6 @@
 /* General Style */
 html, body {
     height: 100%;
-    width: 100%;
 }
 
 body {
@@ -64,12 +63,21 @@ h3 {
     color: #fff;
 }
 
+.btn-back-to-top {
+    position: fixed;
+    font-size: 18px;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 12px;
+    display: none;
+}
+
 /*===========================================
             Parallax(General)
 =============================================*/
 .bg-parallax {
     background-size:cover;
-    backgound-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
@@ -79,6 +87,10 @@ h3 {
 =============================================*/
 .content-box {
     padding: 60px 0px;
+}
+
+.content-box--no-pading {
+    padding: 60px 0px 0px 0px;
 }
 
 .content-title h3 {
@@ -96,7 +108,63 @@ h3 {
     margin-bottom: 30px;
 }
 
+.content-title-white h3 {
+    color: #fff;
+}
 
+/*===========================================
+            Navigation
+=============================================*/
+
+ .navbar {
+    padding: 20px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar-custom {
+    background: rgba(0, 0, 0, .7);
+    padding: 7px 0;
+}
+
+.nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav>li>a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background: none;
+    color: #34c6d3;
+}
+
+.navbar-toggle {
+    background: rgba(0, 0, 0, .1);
+    border: 1px solid #fff;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-custom ul.navbar-nav > li.active > a {
+    color: #34c6d3;
+}
 
 /*===========================================
             Home
@@ -245,4 +313,274 @@ h3 {
 
 .img-wrapper img:hover {
     transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/*===========================================
+            Team
+=============================================*/
+
+.team-member {
+    margin: 0px 10px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+}
+
+.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+.team-member-designation {
+    font-size: 16px;
+    font-weight: 700;
+    color: #34C6D3;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 4px;
+}
+
+/*===========================================
+            Social Icon
+=============================================*/
+
+.social-list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 16px;
+}
+
+.icon-gray {
+    color: #64707B;
+}
+
+.social-icon:hover {
+    color: #34C6D3;
+}
+
+.icon-white {
+    color: #fff;
+}
+
+/*===========================================
+            Testimonial
+=============================================*/
+
+.testimonial-cover {
+    background-image: url("../images/bg-testimonials.jpg");
+}
+
+.testimonial .content-box {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.testimonials-group {
+    padding: 50px 0px;
+}
+.testimonial {
+    text-align: center;
+}
+
+.testimonial img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.testimonial blockquote {
+    border: 0;
+    padding: 20px 150px;
+    font-style: italic;
+    font-family: georgia, sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+.testimonial blockquote p {
+    color: #fff;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    top: 0px;
+    left: 100px;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 0px;
+    right: 100px;
+
+}
+
+.testimonial blockquote::before, .testimonial blockquote::after {
+    font-size: 60px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+}
+
+.testimonial-author p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.testimonial-author p strong {
+    display: block;
+}
+
+/*===========================================
+            Testimonial
+=============================================*/
+
+.pricing-box {
+    border: 3px solid #34c6d3;
+    padding: 50px 20px;
+    margin: 40px 0px;
+}
+
+h4.pricing-title {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #34c6d3;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+h4.pricing-value {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h4.pricing-value sup {
+    font-size: 25px;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+.pricing-description {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0px 60px 0px;
+}
+
+.pricing-description li p{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pricing-box-lg {
+    margin: 0px;
+    padding: 90px 0;;
+    background-color: #34c6d3;
+}
+
+h4.pricing-title-white {
+    background-color: #fff;
+    color: #34c6d3;
+}
+
+.pricing-box-lg .pricing-description li p {
+    color: #fff;
+}
+
+/*===========================================
+            Footer
+=============================================*/
+
+footer {
+    background-color: #41464b;
+    padding-top: 50px;
+    border-top: 5px solid rgba(0, 0, 0, .1);
+}
+
+.contact-left h3, .contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700px;
+}
+
+.contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    background-image: url("../images/world-map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+address {
+    color: #fff;
+}
+
+address strong {
+    font-size: 16px;
+}
+
+.phone-fax-email {
+    letter-spacing: 1px;
+}
+
+form .form-control {
+    padding: 6px 16px;
+    background: transparent;
+    border-radius: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/*====================================================
+                       FOOTER Bottom
+======================================================*/
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 40px 0px;
+    margin-top: 60px;
+}
+.footer-copyrights p {
+    color: #fff;
+}
+
+.footer-menu {
+    float: left;
+    color: #fff;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+}
+
+.footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 0px 10px;
 }

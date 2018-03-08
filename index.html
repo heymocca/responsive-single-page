@@ -6,22 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mocca's Responsive World</title>
-    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- font awesome -->
-    <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
     <!-- bootstrap CSS -->
-    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="/styles/animate.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <!-- POPUP CSS -->
+    <link rel="stylesheet" href="styles/magnific-popup.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
     <!-- css stylesheet -->
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/Responsive.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="70">
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="nav-wrapper">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                       </button>
+                        <a href="#" class="navbar-brand nav-logo">LOGO</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="nav-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#home-link" class="smooth-scroll">Home</a></li>
+                            <li><a href="#services-link" class="smooth-scroll">Services</a></li>
+                            <li><a href="#about-link" class="smooth-scroll">About</a></li>
+                            <li><a href="#work-link" class="smooth-scroll">Work</a></li>
+                            <li><a href="#team-link" class="smooth-scroll">Team</a></li>
+                            <li><a href="#testimonial-link" class="smooth-scroll">Testimonial</a></li>
+                            <li><a href="#pricing-link" class="smooth-scroll">Pricing</a></li>
+                            <li><a href="#contact-link" class="smooth-scroll">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Home -->
-    <section class="home">
+    <section class="home" id="home-link">
         <div class="home-cover bg-parallax animated fadeIn animateDurationGeneral">
             <div class="home-content-box">
                 <div class="home-content-box-inner">
@@ -36,7 +72,7 @@
         </div>
     </section>
     <!-- Services -->
-    <section class="services">
+    <section class="services" id="services-link">
         <div class="content-box">
             <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
                 <h3>Services</h3>
@@ -44,7 +80,7 @@
             </div>
             <div class="container">
                 <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-paint-brush fa-3x"></i>
@@ -53,11 +89,11 @@
                                 <h3>Web Design</h3>
                             </div>
                             <div class="service-item-description">
-                                <p>Enim velit id deserunt in commodo elit commodo et aliquip incididunt nulla.</p>
+                                <p>Enim velit id deserunt in commodo elit commodo et.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-laptop fa-3x"></i>
@@ -66,11 +102,11 @@
                                 <h3> Web Development</h3>
                             </div>
                             <div class="service-item-description">
-                                <p>Enim velit id deserunt in commodo elit commodo et aliquip incididunt nulla.</p>
+                                <p>Enim velit id deserunt in commodo elit commodo et.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-tablet fa-3x"></i>
@@ -79,11 +115,11 @@
                                 <h3>Mobile Apps</h3>
                             </div>
                             <div class="service-item-description">
-                                <p>Enim velit id deserunt in commodo elit commodo et aliquip incididunt nulla.</p>
+                                <p>Enim velit id deserunt in commodo elit commodo et.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-search fa-3x"></i>
@@ -92,11 +128,11 @@
                                 <h3> SEO Optimization </h3>
                             </div>
                             <div class="service-item-description">
-                                <p>Enim velit id deserunt in commodo elit commodo et aliquip incididunt nulla.</p>
+                                <p>Enim velit id deserunt in commodo elit commodo et.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-pencil-square-o fa-3x"></i>
@@ -105,11 +141,11 @@
                                 <h3> UX Design </h3>
                             </div>
                             <div class="service-item-description">
-                                <p>Enim velit id deserunt in commodo elit commodo et aliquip incididunt nulla.</p>
+                                <p>Enim velit id deserunt in commodo elit commodo et.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-life-ring fa-3x"></i>
@@ -118,7 +154,7 @@
                                 <h3> Support </h3>
                             </div>
                             <div class="service-item-description">
-                                <p>Enim velit id deserunt in commodo elit commodo et aliquip incididunt nulla.</p>
+                                <p>Enim velit id deserunt in commodo elit commodo et.</p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +163,7 @@
         </div>
     </section>
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about-link">
         <!-- About right side with diagonal BG parallax -->
         <div class="about-diagonal-parallax bg-parallax"></div>
         <!-- About left side with content -->
@@ -142,11 +178,10 @@
                                     <div class="content-title-underline"></div>
                                 </div>
                                 <div class="about-description">
-                                    <p>
-                                        <p>Occaecat reprehenderit aliquip voluptate non ullamco dolor qui sit voluptate enim fugiat ut.
-                                            Voluptate deserunt commodo occaecat dolore consequat qui labore ipsum. Id reprehenderit
-                                            consequat duis commodo est elit est. Laboris consectetur elit dolor sunt incididunt velit
-                                            Lorem incididunt esse duis. </p>
+                                    <p>Occaecat reprehenderit aliquip voluptate non ullamco dolor qui sit voluptate enim fugiat ut.
+                                        Voluptate deserunt commodo occaecat dolore consequat qui labore ipsum. Id reprehenderit
+                                        consequat duis commodo est elit est. Laboris consectetur elit dolor sunt incididunt velit
+                                        Lorem incididunt esse duis.
                                     </p>
                                 </div>
                                 <div class="about-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
@@ -160,64 +195,64 @@
         </div>
     </section>
     <!-- Work -->
-    <section class="work">
-        <div class="content-box">
+    <section class="work" id="work-link">
+        <div class="content-box content-box--no-pading">
             <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
                 <h3>Work</h3>
             </div>
             <div class="content-title-underline"></div>
             <div class="container-fluid">
                 <div class="row no-gutters">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
                             <a href="../images/work/1.jpg">
                                 <img src="../images/work/1.jpg" alt="work" class="img-responsive">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
                             <a href="../images/work/2.jpg">
                                 <img src="../images/work/2.jpg" alt="work" class="img-responsive">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
                             <a href="../images/work/3.jpg">
                                 <img src="../images/work/3.jpg" alt="work" class="img-responsive">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
                             <a href="../images/work/4.jpg">
                                 <img src="../images/work/4.jpg" alt="work" class="img-responsive">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
                             <a href="../images/work/5.jpg">
                                 <img src="../images/work/5.jpg" alt="work" class="img-responsive">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
                             <a href="../images/work/6.jpg">
                                 <img src="../images/work/6.jpg" alt="work" class="img-responsive">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
                             <a href="../images/work/7.jpg">
                                 <img src="../images/work/7.jpg" alt="work" class="img-responsive">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
                             <a href="../images/work/8.jpg">
                                 <img src="../images/work/8.jpg" alt="work" class="img-responsive">
@@ -228,17 +263,294 @@
             </div>
         </div>
     </section>
-
-    <br><br><br>
-
+    <!-- Team -->
+    <section class="team" id="team-link">
+        <div class="content-box">
+            <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
+                <h3>Our Team</h3>
+            </div>
+            <div class="content-title-underline"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="team-groups owl-carousel owl-theme">
+                            <div class="team-member">
+                                <img src="../images/team/team-1.jpg" alt="" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Name</h4>
+                                    <h4 class="team-member-designation">CEO</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="../images/team/team-2.jpg" alt="" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Name</h4>
+                                    <h4 class="team-member-designation">CEO</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="../images/team/team-3.jpg" alt="" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Name</h4>
+                                    <h4 class="team-member-designation">CEO</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="../images/team/team-4.jpg" alt="" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Name</h4>
+                                    <h4 class="team-member-designation">CEO</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="../images/team/team-5.jpg" alt="" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Name</h4>
+                                    <h4 class="team-member-designation">CEO</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial -->
+    <section class="testimonial" id="testimonial-link">
+        <div class="testimonial-cover bg-parallax">
+            <div class="content-box">
+                <div class="content-title content-title-white wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
+                    <h3>What Our Customers Say</h3>
+                </div>
+                <div class="content-title-underline"></div>
+                <div class="container">
+                    <div class="row wow bounceInDown">
+                        <div class="col-md-12">
+                            <div class="testimonials-group owl-carousel owl-theme">
+                                <div class="testimonial">
+                                    <img src="../images/client/client-1.jpg" alt="" class="img-responsive img-circle">
+                                    <blockquote>
+                                        <p>Adipisicing nisi pariatur velit veniam sunt elit fugiat anim.
+                                            Consequat enim laborum reprehenderit ullamco reprehenderit deserunt nisi
+                                            dolore adipisicing est eiusmod nostrud quis ex enim. Dolore elit et Lorem
+                                            occaecat occaecat ullamco laborum reprehenderit elit eiusmod elit.</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Client-1</strong>
+                                            <span>CEO</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <img src="../images/client/client-2.jpg" alt="" class="img-responsive img-circle">
+                                    <blockquote>
+                                        <p>Adipisicing nisi pariatur velit veniam sunt elit fugiat anim.
+                                            Consequat enim laborum reprehenderit ullamco reprehenderit deserunt nisi
+                                            dolore adipisicing est eiusmod nostrud quis ex enim. Dolore elit et Lorem
+                                            occaecat occaecat ullamco laborum reprehenderit elit eiusmod elit.</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Client-2</strong>
+                                            <span>CEO</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <img src="../images/client/client-3.jpg" alt="" class="img-responsive img-circle">
+                                    <blockquote>
+                                        <p>Adipisicing nisi pariatur velit veniam sunt elit fugiat anim.
+                                            Consequat enim laborum reprehenderit ullamco reprehenderit deserunt nisi
+                                            dolore adipisicing est eiusmod nostrud quis ex enim. Dolore elit et Lorem
+                                            occaecat occaecat ullamco laborum reprehenderit elit eiusmod elit.</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Client-3</strong>
+                                            <span>CEO</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section class="pricing" id="pricing-link">
+        <div class="content-box">
+            <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
+                <h3>Pricing</h3>
+            </div>
+            <div class="content-title-underline"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wow zoomIn" data-wow-duration="1s" data-wow-delay=".3s">
+                        <div class="pricing-box text-center">
+                                <h4 class="pricing-title">Basic</h4>
+                                <h4 class="pricing-value">39<sup>$</sup></h4>
+                                <ul class="pricing-description">
+                                    <li><p>500 EMAILS</p></li>
+                                    <li><p>5GB Disk Space</p></li>
+                                    <li><p>5GB BANDWIDTH</p></li>
+                                    <li><p>UNLIMITED DOMAINS</p></li>
+                                </ul>
+                                <div class="pricing-btn">
+                                    <a href="#" class="btn btn-lg btn-general btn-blue">Purchase</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay=".3s">
+                        <div class="pricing-box pricing-box-lg text-center">
+                                <h4 class="pricing-title pricing-title-white">Enterprise</h4>
+                                <h4 class="pricing-value">39<sup>$</sup></h4>
+                                <ul class="pricing-description">
+                                    <li><p>500 EMAILS</p></li>
+                                    <li><p>5GB Disk Space</p></li>
+                                    <li><p>5GB BANDWIDTH</p></li>
+                                    <li><p>UNLIMITED DOMAINS</p></li>
+                                </ul>
+                                <div class="pricing-btn">
+                                    <a href="#" class="btn btn-lg btn-general btn-white">Purchase</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow zoomIn" data-wow-duration="1s" data-wow-delay=".3s">
+                        <div class="pricing-box text-center">
+                                <h4 class="pricing-title">Standard</h4>
+                                <h4 class="pricing-value">39<sup>$</sup></h4>
+                                <ul class="pricing-description">
+                                    <li><p>500 EMAILS</p></li>
+                                    <li><p>5GB Disk Space</p></li>
+                                    <li><p>5GB BANDWIDTH</p></li>
+                                    <li><p>UNLIMITED DOMAINS</p></li>
+                                </ul>
+                                <div class="pricing-btn">
+                                    <a href="#" class="btn btn-lg btn-general btn-blue">Purchase</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <footer class="contact" id="contact-link">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-left">
+                        <h3>About Us</h3>
+                        <p>Ullamco excepteur id
+                            Lorem eu aute Lorem Lorem amet tempor voluptate do.</p>
+                        <div class="contact-info">
+                            <address>
+                                <strong>Headquarters:</strong> <br />
+                                <p>123 Mac Road, Block 101 <br />
+                                Country, 1000</p>
+                            </address>
+                            <div class="phone-fax-email">
+                                <p>
+                                    <strong>Phone:</strong> <span>123456789</span><br />
+                                    <strong>Fax:</strong> <span>123456789</span><br />
+                                    <strong>Email:</strong> <span>info@email.com</span><br />
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="social-list">
+                            <li><a href="#" class="social-icon icon-white"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-icon icon-white"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-icon icon-white"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#" class="social-icon icon-white"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-right">
+                        <h3>Contact Us</h3>
+                        <form class="" action="#" method="">
+                            <input type="text" name="fullName" placeholder="Full Name" value="" class="form-control">
+                            <input type="text" name="email" placeholder="Email" value="" class="form-control">
+                            <textarea name="message" placeholder="Message..." rows="8" cols="80" class="form-control"></textarea>
+                            <div class="send-btn">
+                                <a href="#" class="btn btn-lg btn-general btn-white" role="button">SEND</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyrights">
+                            <p>Copyrights &copy; 2018 All Rights Reserved.</p>
+                        </div>
+                    </div>
+                        <div class="col-md-6">
+                            <div class="footer-menu hidden-sm hidden-xs">
+                                <ul>
+                                    <li><a href="#home-link" class="smooth-scroll">Home</a>/</li>
+                                    <li><a href="#serivces-link" class="smooth-scroll">Services</a>/</li>
+                                    <li><a href="#about-link" class="smooth-scroll">About</a>/</li>
+                                    <li><a href="#work-link" class="smooth-scroll">Work</a>/</li>
+                                    <li><a href="#testimonial-link" class="smooth-scroll">Testimonial</a>/</li>
+                                    <li><a href="#pricing-link" class="smooth-scroll">Pricing</a>/</li>
+                                    <li><a href="#team-link" class="smooth-scroll">Team</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <a href="#home-link" id="back-to-top" class="btn btn-sm btn-blue smooth-scroll btn-back-to-top"><i class="fa fa-angle-up"></i></a>
     <!-- jQuery -->
-    <script src="/scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap JS -->
-    <script srt="/scripts/bootstrap.min.js"></script>
+    <script src="scripts/bootstrap/bootstrap.min.js"></script>
     <!-- WOW JS -->
-    <script src="/scripts/wow.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <!-- POPUP JS -->
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="scripts/owl.carousel.min.js"></script>
     <!-- Custom JS -->
-    <script src="/scripts/scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
