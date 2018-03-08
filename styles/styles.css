@@ -118,6 +118,7 @@ h3 {
 
  .navbar {
     padding: 20px 0px;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -203,19 +204,23 @@ h3 {
             Home Animate
 =============================================*/
 .animateDurationGeneral {
-    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
 }
 
 .home-cover {
-    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
 }
 
 .home-heading {
-    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
 }
 
 .home-btn {
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 /*===========================================
@@ -308,11 +313,16 @@ h3 {
 }
 
 .img-wrapper img {
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 .img-wrapper img:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    cursor: -webkit-zoom-in;
     cursor: zoom-in;
 }
 
@@ -514,7 +524,7 @@ footer {
 .contact-left h3, .contact-right h3 {
     color: #fff;
     font-size: 27px;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .contact-left p {
